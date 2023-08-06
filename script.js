@@ -30,8 +30,10 @@ const store = Redux.createStore(counterReducer);
 
 const render = () => {
     const state = store.getState();
-    counterEl.innterText = state.value.toString();
+    counterEl.innerText = state.value.toString();
 }
+
+render();
 
 store.subscribe(render);
 
